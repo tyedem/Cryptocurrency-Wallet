@@ -46,7 +46,7 @@ w3 = Web3(Web3.HTTPProvider('HTTP://127.0.0.1:7545'))
 # 1. Review the code contained in the `crypto_wallet.py` script file. Note that
 # the Ethereum transaction functions that you have built throughout this
 # module-including `wallet`, `wallet.derive_acount`, `get_balance`, `fromWei`,
-# `estimateGas`, `sendRawTransaction`, and others&mdash;have now been
+# `estimateGas`, `sendRawTransaction`, and others, have now been
 # incorporated into Python functions that allow you to automate the process of
 # accessing them.
 
@@ -79,7 +79,7 @@ w3 = Web3(Web3.HTTPProvider('HTTP://127.0.0.1:7545'))
 # @TODO:
 # From `crypto_wallet.py import the functions generate_account, get_balance,
 #  and send_transaction
-# YOUR CODE HERE
+from crypto_wallet import generate_account, get_balance, send_transaction
 
 ################################################################################
 # Fintech Finder Candidate Information
@@ -130,7 +130,7 @@ st.sidebar.markdown("## Client Account Address and Ethernet Balance in Ether")
 
 # @TODO:
 #  Call the `generate_account` function and save it as the variable `account`
-# YOUR CODE HERE
+account = generate_account
 
 ##########################################
 
@@ -146,11 +146,11 @@ st.sidebar.write(account.address)
 # @TODO
 # Call `get_balance` function and pass it your account address
 # Write the returned ether balance to the sidebar
-# YOUR CODE HERE
+st.sidebar.write(get_balance(account.address))
 
 ##########################################
 
-# Create a select box to chose a FinTech Hire candidate
+# Create a select box to choose a FinTech Hire candidate
 person = st.sidebar.selectbox('Select a Person', people)
 
 # Create a input field to record the number of hours the candidate worked
@@ -173,7 +173,7 @@ st.sidebar.write(hourly_rate)
 # Identify the FinTech Finder candidate's Ethereum Address
 candidate_address = candidate_database[person][1]
 
-# Write the inTech Finder candidate's Ethereum Address to the sidebar
+# Write the FinTech Finder candidate's Ethereum Address to the sidebar
 st.sidebar.write(candidate_address)
 
 # Write the Fintech Finder candidate's name to the sidebar
@@ -237,11 +237,11 @@ st.sidebar.markdown("## Total Wage in Ether")
 # Calculate total `wage` for the candidate by multiplying the candidate’s hourly
 # rate from the candidate database (`candidate_database[person][3]`) by the
 # value of the `hours` variable
-# YOUR CODE HERE
+wage = candidate_database[person][3] * hours
 
 # @TODO
 # Write the `wage` calculation to the Streamlit sidebar
-# YOUR CODE HERE
+st.sidebar.write(wage)
 
 ##########################################
 # Step 2 - Part 2:

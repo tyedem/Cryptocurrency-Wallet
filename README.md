@@ -17,8 +17,11 @@ This project utilizes streamlit, dataclasses, typing, web3 libraries, and the We
 
 # Ganache Transaction Validation Screenshots
 
+## Transaction Hash
 ![Ganache-transactions](Images/Ganache_transactions.png)
 
+## Client Account
 ![Ganache-client](Images/client_account_address.png)
 
+## Recipient Account
 ![Ganache-recipient](Images/recipient_account_address.png)

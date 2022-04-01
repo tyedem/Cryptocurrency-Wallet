@@ -9,11 +9,11 @@ In this web application prototype, we have 4 Fintech professionals with their Et
 
 ## Libraries, API and Testing
 
-This project utilizes streamlit, dataclasses, typing, web3 libraries, and the Web3 HTTP Provider API. Testing is validated using the personal Ethereum development blockchain Ganache.
+This project utilizes streamlit, dataclasses, typing, web3 libraries, and the Web3 HTTP Provider API. Testing is validated using the personal Ethereum development blockchain, Ganache.
 
 # Web App Demo Screenshot
 
-![Streamlit](Images/Streamlit_transaction.png)
+![Streamlit](Images/Streamlit_main.png)
 
 # Ganache Transaction Validation Screenshots
 

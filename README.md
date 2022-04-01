@@ -13,7 +13,7 @@ This project utilizes streamlit, dataclasses, typing, web3 libraries, and the We
 
 # Web App Demo Screenshot
 
-![Streamlit](Images/Streamlit_main.png)
+![Streamlit](Images/streamlit_main.png)
 
 # Ganache Transaction Validation Screenshots
 
